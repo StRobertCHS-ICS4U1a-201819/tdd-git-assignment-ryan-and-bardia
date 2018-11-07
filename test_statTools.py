@@ -1,4 +1,6 @@
-from test_statTools import*
+from statTools import*
 import pytest
+'''
 def test_mean1():
-    assert mean()
+    assert (mean([10,10,10,10,10,10,10,10,10,10])==10)
+'''
