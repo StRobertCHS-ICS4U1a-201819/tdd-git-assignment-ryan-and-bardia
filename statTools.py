@@ -1,4 +1,4 @@
-
+'''
 def mean(mylist):
     count = 0
     sum = 0
@@ -8,11 +8,6 @@ def mean(mylist):
     return round(sum/count,2)
 '''
 def range(mylist):
-    min_value = None
-    for value in mylist:
-        if not min_value:
-            min_value = value
-        elif value < min_value:
-            min_value = value
-    return min_value
-'''
+    least = min(mylist)
+    greatest = max(mylist)
+    return (greatest - least)
