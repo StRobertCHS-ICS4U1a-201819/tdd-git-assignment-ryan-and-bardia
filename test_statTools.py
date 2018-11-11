@@ -16,10 +16,17 @@ def test_range2():
 def test_range3():
     assert (range([23,12,312,12,0,23,12])==312)
 '''
-
+'''
 def test_variance1():
     assert (variance([6,2,3,1])==3.5)
 def test_variance2():
     assert (variance([32,12,1,23,2,9,24,6])==113.73)
 def test_variance3():
     assert (variance([-23,7,45,21,18,-12,-4])==448.82)
+'''
+def test_stnd_deviation1():
+    assert (stnd_deviation([6,2,3,1])==1.87)
+def test_stnd_deviation2():
+    assert (stnd_deviation([32,12,1,23,2,9,24,6])==10.66)
+def test_stnd_deviation3():
+    assert (stnd_deviation([-23,7,45,21,18,-12,-4])==21.19)

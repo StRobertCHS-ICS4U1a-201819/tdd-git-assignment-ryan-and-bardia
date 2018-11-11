@@ -13,7 +13,7 @@ def range(mylist):
     greatest = max(mylist)
     return (greatest - least)
 '''
-
+'''
 def variance(mylist):
     count = 0
     firstsum = 0
@@ -25,3 +25,15 @@ def variance(mylist):
     for elem in mylist:
         secondsum += (mean-elem)**2
     return round(secondsum/count,2)
+'''
+def stnd_deviation(mylist):
+    count = 0
+    firstsum = 0
+    secondsum = 0
+    for elem in mylist:
+        firstsum += elem
+        count += 1
+    mean = firstsum/count
+    for elem in mylist:
+        secondsum += (mean-elem)**2
+    return round((secondsum/count)**0.5,2)
