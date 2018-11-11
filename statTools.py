@@ -26,6 +26,7 @@ def variance(mylist):
         secondsum += (mean-elem)**2
     return round(secondsum/count,2)
 '''
+'''
 def stnd_deviation(mylist):
     count = 0
     firstsum = 0
@@ -37,3 +38,4 @@ def stnd_deviation(mylist):
     for elem in mylist:
         secondsum += (mean-elem)**2
     return round((secondsum/count)**0.5,2)
+'''
