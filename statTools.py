@@ -1,12 +1,10 @@
+'''
 def mean(mylist):
     count = 0
     sum = 0
     for elem in mylist:
         sum += elem
         count += 1
-<<<<<<< HEAD
-    return round(sum/count,2)
-=======
     return round(sum/count,2)
 '''
 '''
@@ -41,4 +39,3 @@ def stnd_deviation(mylist):
         secondsum += (mean-elem)**2
     return round((secondsum/count)**0.5,2)
 '''
->>>>>>> member-1-dev
