@@ -4,11 +4,6 @@ import pytest
 def test_mean1():
     assert (mean([10,10,10,10,10,10,10,10,10,10])==10)
 def test_mean2():
-<<<<<<< HEAD
-    assert (mean([3,54,23,1,21,32,2,1,-54,23])==10.6)
-def test_mean3():
-    assert (mean([43,2,-213,-32,12,3411,-1024,2343,21,-33,-212])==392.55)
-=======
     assert (mean([12,432,453,122,324,32,-324,-746,21,-233])==9.3)
 def test_mean3():
     assert (mean([4365,-43,-793,4354,31,213,-4233])==556.29)
@@ -36,5 +31,4 @@ def test_stnd_deviation2():
     assert (stnd_deviation([32,12,1,23,2,9,24,6])==10.66)
 def test_stnd_deviation3():
     assert (stnd_deviation([-23,7,45,21,18,-12,-4])==21.19)
->>>>>>> member-1-dev
 '''
