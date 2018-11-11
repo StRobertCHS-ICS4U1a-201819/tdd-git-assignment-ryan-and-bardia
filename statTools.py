@@ -1,7 +1,8 @@
 def median(lst):
   lst.sort()
-  a = (len(lst) / 2)
+  a = int((len(lst) / 2))
   return lst[a]
+'''
 
 def upperQuart(lst):
   lst.sort()   
@@ -12,3 +13,4 @@ def lowerQuart(lst):
   lst.sort()
   a = (len(lst) / 4)
   return lst[a]
+  '''
