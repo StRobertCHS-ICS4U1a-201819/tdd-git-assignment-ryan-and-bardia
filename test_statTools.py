@@ -15,15 +15,16 @@ def test_mode3():
   assert (mode([]) == "Error: Empty List.")
 
 def test_upperQuart1():
-  assert (upperQuart([1,3, 4, 5]) == 4)
+  assert (upperQuart([1, 4, 3, 8, 6, 17, 11, 44, 25, 18]) == 18)
 def test_upperQuart2():
-  assert (upperQuart([1, 4, 2, 8, 6, 17, 11, 44, 25, 18]) == 18)
+  assert (upperQuart([1, -14, 6, -2, 13, 7, 5, 4]) == 6)
 def test_upperQuart3():
   assert (upperQuart([]) == "Error: Empty List.")
 
+
 def test_lowerQuart1():
-  assert (lowerQuart([1, 3, 4, 5]) == 3)
-def test_lowerQuart2():
   assert (lowerQuart([1, 3, 4, 8, 10, 22, 27, 33, 34, 45, 56]) == 4)
 def test_lowerQuart2():
-  assert (lowerQuart([5, 6, 8, 10, 22, 33, 34, 45, 56]) == 6)
+  assert (lowerQuart([1, -14, 6, 13, -1, 4, 14, 2, 7]) == 3)
+def test_lowerQuart3():
+  assert (lowerQuart([]) == "Error: Empty List.")
