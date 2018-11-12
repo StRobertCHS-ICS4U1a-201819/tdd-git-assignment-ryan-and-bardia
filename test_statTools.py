@@ -25,6 +25,6 @@ def test_upperQuart3():
 def test_lowerQuart1():
   assert (lowerQuart([1, 3, 4, 8, 10, 22, 27, 33, 34, 45, 56]) == 4)
 def test_lowerQuart2():
-  assert (lowerQuart([1, -14, 6, 13, -1, 4, 14, 2, 7]) == 3)
+  assert (lowerQuart([1, -14, 6, 13, -1, 4, 14, 2, 7]) == 1)
 def test_lowerQuart3():
   assert (lowerQuart([]) == "Error: Empty List.")
