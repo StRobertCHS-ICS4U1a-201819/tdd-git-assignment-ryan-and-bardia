@@ -17,7 +17,7 @@ def test_mode3():
 def test_upperQuart1():
   assert (upperQuart([1, 4, 3, 8, 6, 17, 11, 44, 25, 18]) == 18)
 def test_upperQuart2():
-  assert (upperQuart([1, -14, 6, -2, 13, 7, 5, 4]) == 6)
+  assert (upperQuart([1, -4, 6, -2, 13, -7, 5, 4, 11, 14]) == 11)
 def test_upperQuart3():
   assert (upperQuart([]) == "Error: Empty List.")
 
