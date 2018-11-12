@@ -8,15 +8,23 @@ def mean(mylist):
             count += 1
         else:
             return 'An error has occured. Please enter an integer.'
-    return round(sum/count,2)
-'''
-'''
+    if count == 0:
+        return 'An error has occured. Please enter an integer.'
+    else:
+        return round(sum/count,2)
+
 def range(mylist):
     if mylist == False:
         return 'An error has occured. Please enter an integer.'
-    least = min(mylist)
-    greatest = max(mylist)
-    return (greatest - least)
+    else:
+        for elem in mylist:
+            if type(elem) == str:
+                return 'An error has occured. Please enter an integer.'
+            else:
+                break
+        least = min(mylist)
+        greatest = max(mylist)
+        return (greatest - least)
 
 
 def variance(mylist):
@@ -29,10 +37,13 @@ def variance(mylist):
             count += 1
         else:
             return 'An error has occured. Please enter an integer.'
-    mean = firstsum/count
-    for elem in mylist:
-        secondsum += (mean-elem)**2
-    return round(secondsum/count,2)
+    if count == 0:
+        return 'An error has occured. Please enter an integer.'
+    else:
+        mean = firstsum/count
+        for elem in mylist:
+            secondsum += (mean-elem)**2
+        return round(secondsum/count,2)
 
 
 def stnd_deviation(mylist):
@@ -45,8 +56,11 @@ def stnd_deviation(mylist):
             count += 1
         else:
             return 'An error has occured. Please enter an integer.'
-    mean = firstsum/count
-    for elem in mylist:
-        secondsum += (mean-elem)**2
-    return round((secondsum/count)**0.5,2)
+    if count == 0:
+        return 'An error has occured. Please enter an integer.'
+    else:
+        mean = firstsum/count
+        for elem in mylist:
+            secondsum += (mean-elem)**2
+        return round((secondsum/count)**0.5,2)
 '''
