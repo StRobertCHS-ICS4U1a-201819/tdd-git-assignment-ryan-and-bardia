@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 def median(lst):
     if len(lst) == 0:
       return "Error: Empty List."
